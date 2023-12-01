@@ -18,7 +18,7 @@ const CustomInput = ({ type, title, isTextArea, ...props }) => {
               <>
                 <Textarea
                   {...field}
-                  className={`!border !border-gray-400 text-gray-600 ${
+                  className={`!border !border-gray-400 text-gray-600 !font-Montserat ${
                     meta.error && meta.touched && "!border-red-600"
                   }`}
                   labelProps={{
@@ -40,7 +40,7 @@ const CustomInput = ({ type, title, isTextArea, ...props }) => {
                 <Input
                   {...field}
                   type={type}
-                  className={`!border !border-gray-400 text-gray-600 ${
+                  className={`!border !border-gray-400 text-gray-600 !font-Montserat ${
                     meta.error && meta.touched && "!border-red-600"
                   }`}
                   labelProps={{

@@ -4,7 +4,7 @@ import { deleteTodo } from "../../utils/FetchApi";
 import { toggleDialog } from "../../redux-store/DialogSlice";
 import { selectTodo } from "../../redux-store/TodoSlice";
 import { IconButton } from "@material-tailwind/react";
-import { DeleteIcon } from "../Icons";
+import { DeleteIcon, EditIcon } from "../Icons";
 
 const IconContainer = ({ todo }) => {
   const dispatch = useDispatch();
@@ -38,7 +38,7 @@ const IconContainer = ({ todo }) => {
         size="sm"
         onClick={handleDelete}
         ripple={false}
-        className="bg-transparent shadow-none hover:shadow-none !w-6 !h-6 !md:w-8 !md:h-8"
+        className="bg-transparent shadow-none hover:shadow-none !w-6 !h-6 !md:w-8 !md:h-8 !focus:outline-none"
       >
         <DeleteIcon />
       </IconButton>
@@ -48,9 +48,9 @@ const IconContainer = ({ todo }) => {
         size="sm"
         onClick={handleEdit}
         ripple={false}
-        className="bg-transparent shadow-none hover:shadow-none !w-6 !h-6 !md:w-8 !md:h-8"
+        className="bg-transparent shadow-none hover:shadow-none !w-6 !h-6 !md:w-8 !md:h-8 !focus:outline-none"
       >
-        <DeleteIcon />
+        <EditIcon />
       </IconButton>
     </div>
   );

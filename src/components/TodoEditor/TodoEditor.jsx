@@ -5,6 +5,7 @@ import {
   DialogBody,
   DialogHeader,
   Button,
+  Typography,
 } from "@material-tailwind/react";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -94,7 +95,12 @@ const TodoEditor = () => {
                     type="submit"
                     className="!w-full mt-4 !bg-[#6D7FFF]"
                   >
-                    Submit
+                    <Typography
+                      variant="small"
+                      className="font-Montserat font-semibold"
+                    >
+                      Submit
+                    </Typography>
                   </Button>
                 </DialogBody>
               </Form>

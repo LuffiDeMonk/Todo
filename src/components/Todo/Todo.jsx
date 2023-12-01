@@ -34,7 +34,7 @@ const Todo = ({ todo }) => {
           label={
             <Typography
               variant="paragraph"
-              className={`font-Montserat dark:text-white transition-colors duration-300 ${
+              className={`font-Montserat dark:text-white transition-colors duration-300 !outline-none !ring-transparent  !focus:outline-none ${
                 todo?.isCompleted
                   ? "text-green-500 line-through dark:text-green-500"
                   : ""
